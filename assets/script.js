@@ -95,7 +95,7 @@ function writePassword() {
 
   passwordText.value = password;
 }
-
+//First user prompt, how many characters
 function generatePassword() {
   let numChars = askUser();
   var possibleChars = [];
@@ -119,7 +119,7 @@ function generatePassword() {
   }
     return numChars;
   }
-
+//Additional user prompts for criteria 
   let lower = confirm(
     "Do you want your password to contain lower case letters?"
   );
@@ -148,6 +148,7 @@ function generatePassword() {
     alert("No password criteria chosen. Please try again");
   }
 
+// Password generator
 var finalPassword = [];
 var charsLength = possibleChars.length
 
